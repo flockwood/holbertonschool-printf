@@ -32,5 +32,5 @@ int print_di(va_list args)
 	{
 	count += _putchar(buffer[i]);
 	}
-	return(count);
+	return (count);
 }
