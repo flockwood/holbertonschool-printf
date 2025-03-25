@@ -17,18 +17,18 @@ int _printf(const char *format, ...)
 	return (-1);
 	}
 	while (*format)
-	{
-	if (*format == '%')
-	{
+		{
+		if (*format == '%')
+		{
+			format++;
+			count += handle_specifier(format, args);
+		}
+		else
+		{
+			count += _putchar(*format);
+		}
 		format++;
-		count += handle_specifier(format, args);
-	}
-	else
-	{
-	count += _putchar(*format);
-	}
-	format++;
-	}
+		}
 	va_end(args);
 	return (count);
 }
