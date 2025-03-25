@@ -14,12 +14,12 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 	if (!format)
 	{
-	  return (-1);
-  }
+	return (-1);
+	}
 	while (*format)
 	{
-	  if (*format == '%')
-	  {
+	if (*format == '%')
+	{
 		format++;
 		count += handle_specifier(format, args);
 	}
