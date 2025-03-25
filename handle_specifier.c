@@ -20,7 +20,7 @@ int handle_specifier(const char *format, va_list args)
     {
         case 'i':
         case 'd':
-            count += print_integer(args);
+            count += print_di(args);
             break;
         case '%':
             count += _putchar('%');
