@@ -7,7 +7,9 @@
 
 /*
  * FIle: main.h
- * Description: HEader file containing prototypes for functions used in the _printf project. Includes standard library headers and function prototypes for formatting and handling variable arguments
+ * Description: Header file containing prototypes for functions
+ *  used in the _printf project. Includes standard library headers
+ *   and function prototypes for formatting and handling variable arguments
  */
 
 /*
@@ -18,7 +20,8 @@
  * _printf - Produces output according to a format
  * @format: A string containing the format specifiers
  *
- * Return: The number of characters printed (excluding the null byte used to end output to strings)
+ * Return: The number of characters printed (excluding the null byte used to
+ * end output to strings)
  */
 int _printf(const char *format, ...);
 
