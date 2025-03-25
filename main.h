@@ -49,29 +49,29 @@ int _putchar(char c);
 int handle_specifier(const char *format, va_list args);
 
 /**
- * handlers_c - Handles the %c format, specific for characters
+ * print_c - Handles the %c format, specific for characters
  * @args: A list of arguments pointing to the character
  *
  * Return: The number of characters printed
  */
 
-int handlers_c(va_list args);
+int print_c(va_list args);
 
 /**
- * handlers_s - Handles the %s format specifier for strings
+ * print_s - Handles the %s format specifier for strings
  * @args: A list of arguments pointing to the string to print
  *
  * Return: The number of characeers printed
  */
 
-int handlers_s(va_list args);
+int print_s(va_list args);
 
 /**
- * handlers_di - Handles the %d and %i format specifiers for integers
+ * print_di - Handles the %d and %i format specifiers for integers
  * @args: The lust of variable arguments passed to _printf
  *
  * Return: The number of characters printed
  */
-int handlers_di(va_list args);
+int print_di(va_list args);
 
 #endif /* MAIN_H */
