@@ -8,7 +8,7 @@
  * Return: The number of characters printed for the specifier
  */
 
-int handle_specifier(cosnt char *format, va_list args)
+int handle_specifier(const char *format, va_list args)
 {
 	int count = 0;
 

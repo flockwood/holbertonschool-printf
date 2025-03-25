@@ -11,7 +11,7 @@ int print_c(va_list args)
 {
 	int count = 0;
 
-	count += _putchar(va_args(args, int));
+	count += _putchar(va_arg(args, int));
 
 	return (count);
 }

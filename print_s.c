@@ -8,11 +8,11 @@
  */
 int print_s(va_list args)
 {
-	char *p = va_args(args, char *);
+	char *p = va_arg(args, char *);
 	int count = 0;
 
 	if (!p)
-		p = "(null)';
+		p = "(null)";
 
 	while (*p)
 	{
