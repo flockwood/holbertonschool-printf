@@ -20,5 +20,7 @@ int main(void)
 	_printf("Negative:[%d]\n", -762534);
 	printf("Negative:[%d]\n", -762534);
 
+	_printf("%d\n", 1024);
+	_printf("%d\n", -1024);
 	return (0);
 }
