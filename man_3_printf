@@ -1,18 +1,17 @@
 _printf(3)  
 
-NAME
+.SH NAME
  _printf
  an implementation of printf function.
 
-SYNOPSIS
+.SH SYNOPSIS
 _printf(const char *format, ...)
 
 
-DESCRIPTION
+.SH DESCRIPTION
 Function produces output according to a format. We handle the conversion specifiers described in OPTIONS.
 
-
-OPTIONS
+.SH OPTIONS
 We handle the conversion specifiers:
 
  %c
@@ -27,12 +26,33 @@ We handle the conversion specifiers:
  %i
 - Prints a number as integer.
 
- RETURN VALUES
+.SH RETURN VALUES
 The number of characters printed (excluding tha null byte used to end output to strings). Write output to stdout, the standard output stream.
 
+.SH EXAMPLES
+**Example 1: Printing characters and strings**
+
+'''c
+_printf("Character: %c\n", 'A');
+_printf("String: %s\n", "Hello, World!");
+'''
+
+**Example 2: Printing integers**
+
+'''c
+_printf("Signed integer: %d\n", -12345);
+_printf("Another integer: %i\n", 67890);
+'''
+
+**Example 3: Printing a percent sign**
+
+'''c
+_printf("Percent sign: %%\n");
+'''
 
 
 
-AUTHORS
+
+.SH AUTHORS
 Mark Hayes
-Ferdinando Lockwood
+Fernando Lockwood
