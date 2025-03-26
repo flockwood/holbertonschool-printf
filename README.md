@@ -66,7 +66,7 @@ Include the main.h header file in your C programs to use the custom _printf func
 
 Compile your program with the _printf source files:
 
-    gcc -Wall -Werror -Wextra -pedantic -std=gnu89 your_program.c _printf.c handlers.c -o your_program
+    gcc -Wall -Werror -Wextra -pedantic -std=gnu89 your_program.c _printf.c handler_specifier.c -o your_program
 
 Run your program:
 
