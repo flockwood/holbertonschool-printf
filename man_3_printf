@@ -1,0 +1,38 @@
+_printf(3)  
+
+NAME
+ _printf
+ an implementation of printf function.
+
+SYNOPSIS
+_printf(const char *format, ...)
+
+
+DESCRIPTION
+Function produces output according to a format. We handle the conversion specifiers described in OPTIONS.
+
+
+OPTIONS
+We handle the conversion specifiers:
+
+ %c
+ Prints a character. The int argument is converted to an unsigned char.
+
+ %s
+- Prints a string. The const char * argument is a pointer to an array of character type (pointer to a string).  Characters  from the  array are written up to (but not including) a terminating null byte ('\0').
+
+ %d
+- Prints a number in decimal. The  int  argument is converted to signed decimal notation.
+
+ %i
+- Prints a number as integer.
+
+ RETURN VALUES
+The number of characters printed (excluding tha null byte used to end output to strings). Write output to stdout, the standard output stream.
+
+
+
+
+AUTHORS
+Mark Hayes
+Ferdinando Lockwood
