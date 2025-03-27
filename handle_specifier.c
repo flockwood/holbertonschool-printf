@@ -1,5 +1,4 @@
-#include<stdarg.h>
-#include "main.h"
+   #include "main.h"
 
 /**
  * handle_specifier - Processes a single format specifier.
@@ -11,25 +10,30 @@
 
 int handle_specifier(const char *format, va_list args)
 {
-    int count = 0;
-    
-    if (!format)
-        return (-1);
-        
-    switch (*format)
-    {
-        case 'i':
-        case 'd':
-            count += print_di(args);
-            break;
-        case '%':
-            count += _putchar('%');
-	    break;
-        default:
-            count += _putchar('%');
-            count += _putchar(*format);
-            break;
-    }
-    return (count);
+	int count = 0;
+
+	if (!format)
+		return (-1);
+
+	switch (*format)
+	{
+		case 'c':
+			count += print_c(args);
+			break;
+		case 's':
+			count += print_s(args);
+			break;
+		case 'i':
+		case 'd':
+			count += print_di(args);
+			break;
+		case '%':
+			count += _putchar('%');
+			break;
+		default:
+			count += _putchar('%');
+			count += _putchar(*format);
+			break;
+	}
+	return (count);
 }
-                                                                                                   
